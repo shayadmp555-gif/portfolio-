@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shayad Pathan</title>
+    <link rel="stylesheet" href="04.task.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Shayad Pathan</div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <ul id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="home">
+
+        <div class="home-text">
+            <h1>Shayad Pathan</h1>
+            <h2>Web Developer</h2>
+
+            <p>
+                I am a web developer who enjoys creating responsive
+                and user-friendly websites using HTML, CSS and JavaScript.
+            </p>
+        </div>
+
+        <div class="profile-logo">
+            👤
+        </div>
+
+    </section>
+
+    <section id="about" class="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a dedicated web developer with a strong interest
+            in front-end technologies. I enjoy learning new skills
+            and building attractive websites that provide great
+            user experiences.
+        </p>
+
+    </section>
+
+    <section id="contact" class="contact">
+
+        <h2>Contact Me</h2>
+
+        <form>
+            <input type="text" placeholder="Enter Your Name" required>
+
+            <input type="email" placeholder="Enter Your Email" required>
+
+            <textarea rows="5" placeholder="Enter Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+    </section>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-links")
+                    .classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
